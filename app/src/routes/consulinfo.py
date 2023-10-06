@@ -46,7 +46,7 @@ def get_consulinfo():
         }
         # Convert the dictionary to a JSON string with indentation
         consul_info_json = json.dumps(consul_info, indent=4)
-        print(consul_info_json, flush=True)
+        logging.info(consul_info_json)
         # Set the response content type to JSON
         response = app.response_class(
             response=consul_info_json,

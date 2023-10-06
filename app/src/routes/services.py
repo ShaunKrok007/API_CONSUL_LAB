@@ -18,7 +18,7 @@ def get_services():
         response = requests.get(f'{CONSUL_API_URL}/v1/catalog/services')
         data = response.json()
         json_data = json.dumps(data, indent=2)
-        print(json_data, flush=True)
+        logging.info(json_data)
         # Set the response content type to JSON
         response = app.response_class(
             response=json_data,

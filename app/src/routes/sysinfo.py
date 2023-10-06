@@ -3,6 +3,7 @@
 # pylint: disable=missing-module-docstring
 # pylint: disable=missing-class-docstring
 # pylint: disable=missing-function-docstring
+
 from pprint import pprint
 import platform
 import psutil
@@ -10,10 +11,10 @@ import json
 from flask import Flask, jsonify
 from . import routes
 import requests
+from config.config import *
 from routes import CONSUL_API_URL
 
 app = Flask(__name__)
-
 
 @routes.route('/sysinfo', methods=['GET'])
 def get_system_info():
@@ -52,14 +53,10 @@ def get_system_info():
             'mtu': stats.mtu,
             'speed': stats.speed,
         }
-    pprint(system_info)
-    pprint(cpu_info)
-    pprint(memory_info)
-    pprint(interface_data)
     merged_dict = {**system_info, **cpu_info, **memory_info, **interface_data, ** network_stats}
     json_data = json.dumps(merged_dict, indent=4)
-    print(json_data, flush=True)
-    # Set the response content type to JSON
+    logging.info(json_data)
+
     response = app.response_class(
         response=json_data,
         status=200,

@@ -18,9 +18,8 @@ def check_status():
         response = requests.get(f'{CONSUL_API_URL}/v1/status/leader')
         data = response.json()
         if response.status_code == 200:
-            print(data, flush=True)
             message = ({"status": "1", "message": "Consul server is running"})
-            print(message, flush=True)
+            logging.info(message)
             return jsonify({"status": "1", "message": "Consul server is running"})
         return jsonify({"status": "0", "message": "Consul server is not running"})
     except requests.exceptions.RequestException as err:
