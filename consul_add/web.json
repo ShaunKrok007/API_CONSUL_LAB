@@ -1,0 +1,12 @@
+{
+  "id": "web1",
+  "name": "ping check if API container is responding to ping",
+  "port": 80,
+  "check": {
+    "name": "ping check",
+    "args": ["ping", "-c1", "172.17.0.2"],
+    "interval": "30s",
+    "status": "passing"
+  }
+}
+

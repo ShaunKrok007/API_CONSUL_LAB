@@ -1,0 +1,15 @@
+{
+  "check": {
+    "id": "api",
+    "name": "HTTP API on port 80",
+    "http": "http://172.17.0.01:80",
+    "tls_server_name": "",
+    "tls_skip_verify": false,
+    "method": "POST",
+    "header": { "Content-Type": ["application/json"] },
+    "body": "{\"method\":\"health\"}",
+    "interval": "10s",
+    "timeout": "1s"
+  }
+}
+

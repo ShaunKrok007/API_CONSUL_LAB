@@ -1,0 +1,7 @@
+FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
+WORKDIR /app
+COPY . /app
+#COPY /scripts/*.py app/scripts/
+RUN pip install requests
+#CMD python3 ./scripts/raft-peers.py
+#CMD ["python3 raft-peers.py"]

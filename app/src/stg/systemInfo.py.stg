@@ -1,0 +1,49 @@
+import requests
+from flask import Flask, jsonify, render_template
+import json
+from tabulate import tabulate
+
+app = Flask(__name__)
+
+CONSUL_API_URL = 'http://host.docker.internal:8500'  # Replace with your Consul server address
+#CONSUL_API_URL = 'http://127.0.0.1:8500'  # Replace with your Consul server address
+
+@app.route('/systeminfo', methods=['GET'])
+def get_system_info():
+    try:
+        # Send GET request to Consul API
+        response = requests.get(f'{CONSUL_API_URL}/v1/agent/self')
+
+        # Check if the request was successful (HTTP status code 200)
+        if response.status_code == 200:
+            data = response.json()
+            print(data)
+            system_info = {
+                "Registered Nodes": data["Config"]["NodeName"],    
+                "Node": data["Config"]["NodeName"],
+                "Datacenter": data["Config"]["Datacenter"],
+                "Consul Versios": data["Config"]["Version"],
+            }
+            return jsonify(system_info), 200
+        else:
+            return jsonify({"error": "Failed to retrieve system information"}), response.status_code
+
+    except requests.exceptions.RequestException as e:
+        return jsonify({"error": f"Request error: {str(e)}"}), 500
+
+
+#
+def jsonify_to_html(data):
+    # Create an HTML table from JSON data
+    table = "<table>"
+    for item in data:
+        table += "<tr>"
+        for key, value in item.items():
+            table += f"<td>{key}</td><td>{value}</td>"
+        table += "</tr>"
+    table += "</table>"
+    return table
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+

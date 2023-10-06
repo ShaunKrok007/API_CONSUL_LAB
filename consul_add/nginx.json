@@ -1,0 +1,11 @@
+{
+  "id": "nginx",
+  "name": "nginx",
+  "port": "80",
+  "check": {
+    "name": "ping check",
+    "interval": "30s",
+    "status": "passing"
+  }
+}
+

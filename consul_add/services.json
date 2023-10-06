@@ -1,0 +1,9 @@
+{
+  "services": [{
+    "name": "web",
+    "checks": [{
+      "id": "web-API-check",
+      "http": "http://172.17.0.1:80",
+      "interval": "15s"
+    }]]
+  }
