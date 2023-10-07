@@ -42,7 +42,7 @@ http://YOUR-IP-ADDRESS:8500/ui<br />
 http://10.100.102.100:8500/ui<br />
 
 ## Changes: ##
-1. Added logging mdpule (deleted all print statments)
+1. Added logging modules(deleted all print statments)
 2. Added Flask Blueprints
 3. Added config.config.py - managed variables and logging
 4. Updated container to use Alpine image
