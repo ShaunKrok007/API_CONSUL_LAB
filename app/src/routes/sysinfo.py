@@ -12,7 +12,6 @@ from flask import Flask, jsonify
 from . import routes
 import requests
 from config.config import *
-from routes import CONSUL_API_URL
 
 app = Flask(__name__)
 

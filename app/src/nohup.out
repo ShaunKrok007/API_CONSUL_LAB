@@ -1,0 +1,46 @@
+ * Serving Flask app 'getsyslog'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.2.15:5001
+Press CTRL+C to quit
+10.100.102.140 - - [07/Oct/2023 10:56:22] "GET /log_stream HTTP/1.1" 200 -
+ * Serving Flask app 'getsyslog'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.2.15:5001
+Press CTRL+C to quit
+10.100.102.140 - - [07/Oct/2023 10:57:31] "GET /log_stream HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 10:57:36] "GET /log_stream HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 10:57:38] "GET /log_stream HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 10:57:46] "GET /log_stream HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 10:57:59] "GET /log_stream HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 10:58:03] "GET /log_stream HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 10:58:13] "GET /log_stream HTTP/1.1" 200 -
+ * Serving Flask app 'getsyslog'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.2.15:5001
+Press CTRL+C to quit
+10.100.102.140 - - [07/Oct/2023 10:59:34] "GET /log_stream HTTP/1.1" 200 -
+ * Serving Flask app 'getsyslog'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://10.0.2.15:5001
+Press CTRL+C to quit
+10.100.102.140 - - [07/Oct/2023 12:24:31] "GET /getsyslog HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 12:24:33] "GET /getsyslog HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 12:24:33] "GET /getsyslog HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 12:24:34] "GET /getsyslog HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 12:26:01] "GET /getsyslog HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 12:26:09] "GET /getsyslog HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 12:26:45] "GET /getsyslog HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 12:26:51] "GET /getsyslog HTTP/1.1" 200 -
+10.100.102.140 - - [07/Oct/2023 12:27:00] "GET /getsyslog HTTP/1.1" 200 -
