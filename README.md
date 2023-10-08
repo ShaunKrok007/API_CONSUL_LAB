@@ -10,7 +10,7 @@
    https://10.100.102.100:5001/getsyslog <br />
 6. Updated configuration for PSUTIL to access host instead of container
    https://10.100.102.100:5002/sysinfo <br />
-7. Added new self-signed certificate in Flask application for localhost
+7. Added new self-signed certificate for API  <br />
 
 Exercise includes two main parts: 
 
