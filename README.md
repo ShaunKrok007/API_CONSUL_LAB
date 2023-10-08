@@ -50,3 +50,5 @@ http://10.100.102.100:8500/ui<br />
    http://10.100.102.100:5001/getsyslog <br />
 6. Updated configuration for PSUTIL to access host instead of container
    http://10.100.102.100:5002/sysinfo <br />
+
+http://10.100.102.100:5002/sysinfo
