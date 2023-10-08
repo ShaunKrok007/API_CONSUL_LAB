@@ -13,3 +13,4 @@ from .raftpeers import *
 from .sysinfo import *
 from .status import *
 from .services import *
+from .healthcheck import *

@@ -1,0 +1,35 @@
+{
+  "server": true,
+  "datacenter": "ob-lab",
+  "log_level": "INFO",
+  "enable_script_checks": true,
+  "services": [
+    {
+      "id": "web-service-8080",
+      "name": "web",
+      "port": 8080,
+      "check": {
+	"tcp": "localhost:8080",     
+        "interval": "30s"
+      }
+    },
+    {
+      "id": "web-service-5001",
+      "name": "web",
+      "port": 5001,
+      "check": {
+	"tcp": "localhost:5001",      
+        "interval": "30s"
+      }
+    },
+    {
+      "id": "web-service-5002",
+      "name": "web",
+      "port": 5002,
+      "check": {
+        "tcp": "localhost:5002",
+        "interval": "30s"
+      }
+     }
+  ]
+}
