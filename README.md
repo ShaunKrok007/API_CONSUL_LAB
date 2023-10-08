@@ -43,11 +43,11 @@ c. vagrant up<br />
 
 ## API Service ##
 
-http://10.100.102.100:8080/status<br />
-http://10.100.102.100:8080/consulinfo <br />
-http://10.100.102.100:8080/services <br />
-http://10.100.102.100:8080/raftpeers <br />
-http://10.100.102.100:8080/sysinfo <br />
+https://10.100.102.100:8080/status<br />
+https://10.100.102.100:8080/consulinfo <br />
+https://10.100.102.100:8080/services <br />
+https://10.100.102.100:8080/raftpeers <br />
+https://10.100.102.100:8080/sysinfo <br />
 
 Consul User Interface(UI)<br />
 http://YOUR-IP-ADDRESS:8500/ui<br />
