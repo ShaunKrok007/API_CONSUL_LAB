@@ -31,15 +31,15 @@ c. vagrant up<br />
 
 ## API Service ##
 
-http://10.100.102.100:8080/status<br />
-http://10.100.102.100:8080/consulinfo <br />
-http://10.100.102.100:8080/services <br />
-http://10.100.102.100:8080/raftpeers <br />
-http://10.100.102.100:8080/sysinfo <br />
+https://10.100.102.100:8080/status<br />
+https://10.100.102.100:8080/consulinfo <br />
+https://10.100.102.100:8080/services <br />
+https://10.100.102.100:8080/raftpeers <br />
+https://10.100.102.100:8080/sysinfo <br />
 
 Consul User Interface(UI)<br />
 http://YOUR-IP-ADDRESS:8500/ui<br />
-http://10.100.102.100:8500/ui<br />
+https://10.100.102.100:8500/ui<br />
 
 ## Changes: ##
 1. Added logging modules(deleted all print statments)
@@ -47,8 +47,7 @@ http://10.100.102.100:8500/ui<br />
 3. Added config.config.py - managed variables and logging
 4. Updated container to use Alpine image
 5. Updated configuration to allow access to syslog via Flask
-   http://10.100.102.100:5001/getsyslog <br />
+   https://10.100.102.100:5001/getsyslog <br />
 6. Updated configuration for PSUTIL to access host instead of container
-   http://10.100.102.100:5002/sysinfo <br />
-
-http://10.100.102.100:5002/sysinfo
+   https://10.100.102.100:5002/sysinfo <br />
+7. Added new self-signed certificate in our Flask application

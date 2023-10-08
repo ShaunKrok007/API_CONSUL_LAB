@@ -66,4 +66,4 @@ def get_system_info():
         return f"Error: {str(e)}"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5002)
+    app.run(host='0.0.0.0', port=5002, ssl_context=('cert.pem', 'key.pem'))
