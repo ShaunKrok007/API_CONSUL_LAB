@@ -1,5 +1,17 @@
 ## Consul-API Exercise completed September 2023
 
+
+## Changes: ##
+1. Added logging modules(deleted all print statments)
+2. Added Flask Blueprints
+3. Added config.config.py - managed variables and logging
+4. Updated container to use Alpine image
+5. Updated configuration to allow access to syslog via Flask
+   https://10.100.102.100:5001/getsyslog <br />
+6. Updated configuration for PSUTIL to access host instead of container
+   https://10.100.102.100:5002/sysinfo <br />
+7. Added new self-signed certificate in Flask application for localhost
+
 Exercise includes two main parts: 
 
 1. Building a Consul server and exposing Consul API 
@@ -40,14 +52,3 @@ http://10.100.102.100:8080/sysinfo <br />
 Consul User Interface(UI)<br />
 http://YOUR-IP-ADDRESS:8500/ui<br />
 http://10.100.102.100:8500/ui<br />
-
-## Changes: ##
-1. Added logging modules(deleted all print statments)
-2. Added Flask Blueprints
-3. Added config.config.py - managed variables and logging
-4. Updated container to use Alpine image
-5. Updated configuration to allow access to syslog via Flask
-   https://10.100.102.100:5001/getsyslog <br />
-6. Updated configuration for PSUTIL to access host instead of container
-   https://10.100.102.100:5002/sysinfo <br />
-7. Added new self-signed certificate in Flask application for localhost
