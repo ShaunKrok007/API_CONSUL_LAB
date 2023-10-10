@@ -31,12 +31,6 @@ Write a small API service that will expose the following routes:
 4. vagrant up <br />
 config.vm.network "public_network", ip: "YOUR-IP-ADDRESS on the host machine"<br />
 
-## Create VM - Create directory on the host machine and execute the vagrant CLI commands:<br />
-Base box image is a custom image stored on Vagrant cloud(public access)<br />
-a. vagrant box add shaunkrok/conlab_box /path/to/vagrant-box.box <br />
-b. vagrant init shaunkrok/conlab_box [ save or edit the existing .\Vagrantfile.example and update the config.vm.box]<br />
-c. vagrant up<br />
-
 ## API Service ##
 
 https://10.100.102.100:8080/status<br />
