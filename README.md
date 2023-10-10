@@ -29,7 +29,7 @@ Write a small API service that will expose the following routes:
 2. copy Vagrantfile to directory <br />
 3. cd to directory <br />
 4. vagrant up <br />
-# config.vm.network "public_network", ip: "YOUR-IP-ADDRESS on the host machine"<br />
+config.vm.network "public_network", ip: "YOUR-IP-ADDRESS on the host machine"<br />
 
 ## Create VM - Create directory on the host machine and execute the vagrant CLI commands:<br />
 Base box image is a custom image stored on Vagrant cloud(public access)<br />
