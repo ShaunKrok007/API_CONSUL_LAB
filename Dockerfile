@@ -1,11 +1,7 @@
-#FROM tiangolo/uwsgi-nginx-flask:python3.6-alpine3.7
-#FROM alpine:3.10
-FROM  alpine:3.10.squashed
-#FROM tiangolo/uwsgi-nginx-flask:python3.11
+FROM python:3.8-slim
 COPY ./app  /app
 WORKDIR /app/src
-
 RUN pip install requests
+RUN pip install flask
 RUN pip3 install psutil
-#RUN pip3 install docker
-CMD python3 /app/src/apirun.py
+CMD ["python3", "/app/src/apirun.py"]
