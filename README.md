@@ -24,16 +24,12 @@ Write a small API service that will expose the following routes:
  	GET  /v1/api/consulCluster/members
   	GET  /v1/api/consulCluster/systemInfo
    
-## Vagrant VM Setup .\Vagrantfile ##<br />
-Vagrant.configure("2") do |config|<br />
-  config.vm.hostname = "consul-webdev-vm-1"  <br />
-  config.vm.box = "shaunkrok/conlab_box"  <br />
-  config.vm.box_version = "1.0.0.0"  <br />
-  config.vm.network "public_network", ip: "10.100.102.100"  <br />
-end<br />
-
-config.vm.box = "shaunkrok/conlab_box"<br />
-config.vm.network "public_network", ip: "YOUR-IP-ADDRESS on the host machine"<br />
+## Vagrant VM Setup .\Vagrantfile <br />
+1. create a directory <br />
+2. copy Vagrantfile to directory <br />
+3. cd to directory <br />
+4. vagrant up <br />
+# config.vm.network "public_network", ip: "YOUR-IP-ADDRESS on the host machine"<br />
 
 ## Create VM - Create directory on the host machine and execute the vagrant CLI commands:<br />
 Base box image is a custom image stored on Vagrant cloud(public access)<br />
