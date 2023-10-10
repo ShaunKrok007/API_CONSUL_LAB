@@ -56,7 +56,10 @@ Vagrant.configure("2") do |config|
     sudo apt-get install -y docker.io
     sudo systemctl enable docker
     sudo systemctl start docker
-    # Start .py modules on host
+    # Start API
+    cd \opt\flaskweb
+    sudo ./dockerup.sh
+    cd \opt\flaskweb\app\src
     sudo nohup /opt/flaskweb/app/src/getsyslog.py &
     sudo nohup /opt/flaskweb/app/src/sysinfohost.py &
   SHELL
