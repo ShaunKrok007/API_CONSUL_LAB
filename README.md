@@ -7,9 +7,9 @@
 3. Added config.config.py - managed variables and logging
 4. Updated container to use Alpine image
 5. Updated configuration to allow access to syslog via Flask
-   https://10.100.102.100:5001/getsyslog <br />
+   https://10.100.102.101:5001/getsyslog <br />
 6. Updated configuration for PSUTIL to access host instead of container
-   https://10.100.102.100:5002/sysinfo <br />
+   https://10.100.102.101:5002/sysinfo <br />
 7. Added new self-signed certificate for API  <br />
 
 Exercise includes two main parts: 
@@ -33,13 +33,13 @@ config.vm.network "public_network", ip: "YOUR-IP-ADDRESS on the host machine"<br
 
 ## API Service ##
 
-https://10.100.102.100:8080/status<br />
-https://10.100.102.100:8080/consulinfo <br />
-https://10.100.102.100:8080/services <br />
-https://10.100.102.100:8080/raftpeers <br />
-https://10.100.102.100:8080/sysinfo <br />
-https://10.100.102.100:8080/healthcheck <br />
+https://10.100.102.101:8080/status<br />
+https://10.100.102.101:8080/consulinfo <br />
+https://10.100.102.101:8080/services <br />
+https://10.100.102.101:8080/raftpeers <br />
+https://10.100.102.101:8080/sysinfo <br />
+https://10.100.102.101:8080/healthcheck <br />
 
 Consul User Interface(UI)<br />
 http://YOUR-IP-ADDRESS:8500/ui<br />
-http://10.100.102.100:8500/ui<br />
+http://10.100.102.101:8500/ui<br />
