@@ -32,6 +32,7 @@ Vagrant.configure("2") do |config|
     # Clone the repository with authentication token
     git clone https://$GITHUB_TOKEN@github.com/ShaunKrok007/API_CONSUL_LAB.git /opt/flaskweb -b main
     rm /vagrant/.bashrc
+    sudo snap install gh
     # Install Consul
     apt-get install -y unzip
     wget https://releases.hashicorp.com/consul/1.16.2/consul_1.16.2_linux_amd64.zip
@@ -57,11 +58,11 @@ Vagrant.configure("2") do |config|
     sudo systemctl enable docker
     sudo systemctl start docker
     # Start API
-    cd \opt\flaskweb
+    cd /opt/flaskweb/
     sudo ./dockerup.sh
-    cd \opt\flaskweb\app\src
-    sudo nohup /opt/flaskweb/app/src/getsyslog.py &
-    sudo nohup /opt/flaskweb/app/src/sysinfohost.py &
+    cd /opt/flaskweb/app/src
+    sudo nohup /opt/flaskweb/app/src/getsyslog.py /dev/null &
+    sudo nohup /opt/flaskweb/app/src/sysinfohost.py /dev/null &
   SHELL
   end 
   config.vm.provider "virtualbox" do |vb|
