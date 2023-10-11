@@ -44,3 +44,155 @@ Press CTRL+C to quit
 10.100.102.140 - - [07/Oct/2023 12:26:45] "GET /getsyslog HTTP/1.1" 200 -
 10.100.102.140 - - [07/Oct/2023 12:26:51] "GET /getsyslog HTTP/1.1" 200 -
 10.100.102.140 - - [07/Oct/2023 12:27:00] "GET /getsyslog HTTP/1.1" 200 -
+ * Serving Flask app 'getsyslog' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on https://10.0.2.15:5001/ (Press CTRL+C to quit)
+ * Serving Flask app 'sysinfohost' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+2023-10-10 17:16:27,563 [WARNING]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2023-10-10 17:16:27,563 [INFO]  * Running on https://10.0.2.15:5002/ (Press CTRL+C to quit)
+10.100.102.140 - - [10/Oct/2023 17:30:25] "GET /getsyslog HTTP/1.1" 200 -
+2023-10-10 17:30:29,074 [INFO] {
+    "Operating System": "Linux",
+    "OS Version": "#223-Ubuntu SMP Tue May 23 13:09:22 UTC 2023",
+    "Machine Architecture": "x86_64",
+    "Processor": "x86_64",
+    "CPU Cores": 2,
+    "Logical CPUs": 2,
+    "CPU Usage": [
+        1.0,
+        1.0
+    ],
+    "Total Memory (GB)": 1.95,
+    "Available Memory (GB)": 1.52,
+    "lo": {
+        "is_up": true,
+        "duplex": 0,
+        "mtu": 65536,
+        "speed": 0
+    },
+    "enp0s3": {
+        "is_up": true,
+        "duplex": 2,
+        "mtu": 1500,
+        "speed": 1000
+    },
+    "docker0": {
+        "is_up": true,
+        "duplex": 0,
+        "mtu": 1500,
+        "speed": 0
+    },
+    "enp0s8": {
+        "is_up": true,
+        "duplex": 2,
+        "mtu": 1500,
+        "speed": 1000
+    },
+    "veth16678d8": {
+        "is_up": true,
+        "duplex": 2,
+        "mtu": 1500,
+        "speed": 10000
+    },
+    "Disk utilization": [
+        41555521536,
+        2651746304,
+        38886998016,
+        6.4
+    ]
+}
+2023-10-10 17:30:29,078 [INFO] 10.100.102.140 - - [10/Oct/2023 17:30:29] "GET /sysinfo HTTP/1.1" 200 -
+ * Serving Flask app 'getsyslog' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on https://10.0.2.15:5001/ (Press CTRL+C to quit)
+ * Serving Flask app 'sysinfohost' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+2023-10-10 17:41:49,590 [WARNING]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2023-10-10 17:41:49,590 [INFO]  * Running on https://10.0.2.15:5002/ (Press CTRL+C to quit)
+ * Serving Flask app 'getsyslog' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on https://10.0.2.15:5001/ (Press CTRL+C to quit)
+ * Serving Flask app 'sysinfohost' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+2023-10-10 17:44:29,979 [WARNING]  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2023-10-10 17:44:29,979 [INFO]  * Running on https://10.0.2.15:5002/ (Press CTRL+C to quit)
+2023-10-10 18:12:22,501 [INFO] {
+    "Operating System": "Linux",
+    "OS Version": "#223-Ubuntu SMP Tue May 23 13:09:22 UTC 2023",
+    "Machine Architecture": "x86_64",
+    "Processor": "x86_64",
+    "CPU Cores": 2,
+    "Logical CPUs": 2,
+    "CPU Usage": [
+        1.0,
+        0.0
+    ],
+    "Total Memory (GB)": 1.95,
+    "Available Memory (GB)": 1.55,
+    "enp0s8": {
+        "is_up": true,
+        "duplex": 2,
+        "mtu": 1500,
+        "speed": 1000
+    },
+    "docker0": {
+        "is_up": true,
+        "duplex": 0,
+        "mtu": 1500,
+        "speed": 0
+    },
+    "vethb1fd927": {
+        "is_up": true,
+        "duplex": 2,
+        "mtu": 1500,
+        "speed": 10000
+    },
+    "enp0s3": {
+        "is_up": true,
+        "duplex": 2,
+        "mtu": 1500,
+        "speed": 1000
+    },
+    "lo": {
+        "is_up": true,
+        "duplex": 0,
+        "mtu": 65536,
+        "speed": 0
+    },
+    "Disk utilization": [
+        41555521536,
+        2714263552,
+        38824480768,
+        6.5
+    ]
+}
+2023-10-10 18:12:22,504 [INFO] 10.100.102.140 - - [10/Oct/2023 18:12:22] "GET /sysinfo HTTP/1.1" 200 -
+10.100.102.140 - - [10/Oct/2023 18:12:26] "GET /getsyslog HTTP/1.1" 200 -

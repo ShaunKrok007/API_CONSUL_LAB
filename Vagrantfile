@@ -60,9 +60,6 @@ Vagrant.configure("2") do |config|
     # Start API
     cd /opt/flaskweb/
     sudo ./dockerup.sh
-    cd /opt/flaskweb/app/src
-    sudo nohup /opt/flaskweb/app/src/getsyslog.py /dev/null &
-    sudo nohup /opt/flaskweb/app/src/sysinfohost.py /dev/null &
   SHELL
   end 
   config.vm.provider "virtualbox" do |vb|
